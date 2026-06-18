@@ -22,9 +22,17 @@ jobs:
       - name: Generate languages card
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          card: languages
+          card: top-langs
           options: username=${{ github.repository_owner }}&layout=donut&theme=dark&stats_format=percentages
           path: profile/languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: streak
+          options: username=${{ github.repository_owner }}&theme=dark
+          path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
