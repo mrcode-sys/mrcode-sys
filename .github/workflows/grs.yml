@@ -15,7 +15,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&rank_icon=gitjub&ring_color=22f68c&hide_title=true&custom_title=custom_title=mrcode-sys+GitHub+Stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&rank_icon=gitjub&ring_color=22f68c&custom_title=${{ github.repository_owner }}%20GitHub%20Stats
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
