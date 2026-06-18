@@ -15,8 +15,16 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&rank_icon=gitjub&ring_color=22f68c
           path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: languages
+          options: username=${{ github.repository_owner }}&layout=donut&theme=dark&stats_format=percentages
+          path: profile/languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
