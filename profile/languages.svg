@@ -133,7 +133,7 @@
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#f34b7d" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        C++ 7.97%
+        C++ 7.96%
       </text>
     </g>
   </g><g transform="translate(0, 64)">
@@ -165,8 +165,8 @@
        <g class="stagger" style="animation-delay: 600ms">
         <path
           data-testid="lang-donut"
-          size="80.08"
-          d="M 62.86216424281796 98.8850292270727 A 56.66666666666667 56.66666666666667 0 1 0 116.66666666666667 60"
+          size="80.09"
+          d="M 62.873347394975376 98.85122637334254 A 56.66666666666667 56.66666666666667 0 1 0 116.66666666666667 60"
           stroke="#3572A5"
           fill="none"
           stroke-width="12">
@@ -176,8 +176,8 @@
        <g class="stagger" style="animation-delay: 700ms">
         <path
           data-testid="lang-donut"
-          size="7.97"
-          d="M 78.00562881713422 75.2367829653077 A 56.66666666666667 56.66666666666667 0 0 0 62.86216424281796 98.8850292270727"
+          size="7.96"
+          d="M 78.00562881713422 75.2367829653077 A 56.66666666666667 56.66666666666667 0 0 0 62.873347394975376 98.85122637334254"
           stroke="#f34b7d"
           fill="none"
           stroke-width="12">
