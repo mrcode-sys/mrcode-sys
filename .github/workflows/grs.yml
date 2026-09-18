@@ -14,15 +14,16 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&rank_icon=gitgub&ring_color=22f68c&custom_title=${{ github.repository_owner }}%20GitHub%20Stats
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Generate languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=donut&theme=dark&stats_format=percentages
